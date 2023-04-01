@@ -15,6 +15,7 @@ export const login = async (req , res , next)  => {
         res.cookie("accessToken" , token, {httpOnly : true}).status(200).send(others)
            
     }catch(error) {
+        console.log(error);
         next(error)
     }
 
