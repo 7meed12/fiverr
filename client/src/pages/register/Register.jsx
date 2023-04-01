@@ -11,8 +11,6 @@ function Register() {
     email: "",
     password: "",
     img: "",
-    country: "",
-    isSeller: false,
     desc: "",
   });
 
@@ -24,11 +22,7 @@ function Register() {
     });
   };
 
-  const handleSeller = (e) => {
-    setUser((prev) => {
-      return { ...prev, isSeller: e.target.checked };
-    });
-  };
+  
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -48,42 +42,29 @@ function Register() {
       <form onSubmit={handleSubmit}>
         <div className="left">
           <h1>Create a new account</h1>
-          <label htmlFor="">Username</label>
+          <label htmlFor="">Username ... </label>
           <input
             name="username"
             type="text"
-            placeholder="johndoe"
+            placeholder="Username"
             onChange={handleChange}
           />
           <label htmlFor="">Email</label>
           <input
             name="email"
             type="email"
-            placeholder="email"
+            placeholder="Email"
             onChange={handleChange}
           />
           <label htmlFor="">Password</label>
-          <input name="password" type="password" onChange={handleChange} />
+          <input name="password" type="password" onChange={handleChange} placeholder="Your Password"/>
           <label htmlFor="">Profile Picture</label>
           <input type="file" onChange={(e) => setFile(e.target.files[0])} />
-          <label htmlFor="">Country</label>
-          <input
-            name="country"
-            type="text"
-            placeholder="Usa"
-            onChange={handleChange}
-          />
+          
           <button type="submit">Register</button>
         </div>
         <div className="right">
-          <h1>I want to become a seller</h1>
-          <div className="toggle">
-            <label htmlFor="">Activate the seller account</label>
-            <label className="switch">
-              <input type="checkbox" onChange={handleSeller} />
-              <span className="slider round"></span>
-            </label>
-          </div>
+         
           <label htmlFor="">Phone Number</label>
           <input
             name="phone"
