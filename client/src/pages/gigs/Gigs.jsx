@@ -18,7 +18,7 @@ function Gigs() {
     queryFn: () =>
       newRequest
         .get(
-          `/gigs${search}&min=${minRef.current.value}&max=${maxRef.current.value}&sort=${sort}`
+          `/post${search}`
         )
         .then((res) => {
           return res.data;
@@ -43,7 +43,7 @@ function Gigs() {
   return (
     <div className="gigs">
       <div className="container">
-        <span className="breadcrumbs">Liverr > Graphics & Design ></span>
+        <span className="breadcrumbs">Liverr  Graphics & Design </span>
         <h1>AI Artists</h1>
         <p>
           Explore the boundaries of art and technology with Liverr's AI artists

@@ -17,41 +17,39 @@ function Home() {
           <CatCard key={card.id} card={card} />
         ))}
       </Slide>
-      <div className="features">
+      <div className="features" dir="rtl">
         <div className="container">
           <div className="item">
-            <h1>A whole world of freelance talent at your fingertips</h1>
+            <h1>عملك الحر هو افضل طريق لنجاحك</h1>
             <div className="title">
               <img src="./img/check.png" alt="" />
-              The best for every budget
+              <p className="item"> زيادة الدخل</p>
+             
             </div>
             <p>
-              Find high-quality services at every price point. No hourly rates,
-              just project-based pricing.
+            يمكنك أن تكون عاملاً حراً بشكل أساسي او بجوارك عملك التقليدي ، مع إمكانية حصولك علي العملة الصعبة مما يسمح لك بزيادة دخلك بدرجة كبيرة.
+
             </p>
             <div className="title">
               <img src="./img/check.png" alt="" />
-              Quality work done quickly
-            </div>
+              تحقيق الاستقلالية            </div>
             <p>
-              Find the right freelancer to begin working on your project within
-              minutes.
+            يمكن أن يساعد التعلم المستقل الأفراد على تطوير المهارات والمعرفة اللازمة لبناء عمل مستقل ناجح وتحقيق الاستقلال المالي.
+
             </p>
             <div className="title">
               <img src="./img/check.png" alt="" />
-              Protected payments, every time
+              المرونة
             </div>
             <p>
-              Always know what you'll pay upfront. Your payment isn't released
-              until you approve the work.
+            يتيح العمل الحر للمستقل بتحديد جدول زمني مرن وحرية العمل من أي مكان. يمكنك تحديد المواعيد النهائية وساعات العمل الخاصة بك ، طالما أنك تلبي احتياجات عميلك. 
             </p>
             <div className="title">
               <img src="./img/check.png" alt="" />
-              24/7 support
+              اكتساب مهارات جديدة
             </div>
             <p>
-              Find high-quality services at every price point. No hourly rates,
-              just project-based pricing.
+            غالبًا ما يتطلب العمل المستقل مجموعة فريدة من المهارات ، يمكن أن يساعد التعلم المستقل الأفراد على اكتساب هذه المهارات وتطوير خبراتهم في المجال الذي يختارونه.
             </p>
           </div>
           <div className="item">
@@ -63,30 +61,14 @@ function Home() {
         <div className="container">
           <h1>Explore the marketplace</h1>
           <div className="items">
-            <div className="item">
-              <img
-                src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/graphics-design.d32a2f8.svg"
-                alt=""
-              />
-              <div className="line"></div>
-              <span>Graphics & Design</span>
-            </div>
-            <div className="item">
-              <img
-                src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/online-marketing.74e221b.svg"
-                alt=""
-              />
-              <div className="line"></div>
-
-              <span>Digital Marketing</span>
-            </div>
+           
             <div className="item">
               <img
                 src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/writing-translation.32ebe2e.svg"
                 alt=""
               />
               <div className="line"></div>
-              <span>Writing & Translation</span>
+              <span>الكتاب الالكتروني</span>
             </div>
             <div className="item">
               <img
@@ -94,7 +76,7 @@ function Home() {
                 alt=""
               />
               <div className="line"></div>
-              <span>Video & Animation</span>
+              <span>المقابلات</span>
             </div>
             <div className="item">
               <img
@@ -102,39 +84,18 @@ function Home() {
                 alt=""
               />
               <div className="line"></div>
-              <span>Music & Audio</span>
+              <span>المدونات الصوتية</span>
             </div>
-            <div className="item">
-              <img
-                src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/programming.9362366.svg"
-                alt=""
-              />
-              <div className="line"></div>
-              <span>Programming & Tech</span>
-            </div>
-            <div className="item">
-              <img
-                src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/business.bbdf319.svg"
-                alt=""
-              />
-              <div className="line"></div>
-              <span>Business</span>
-            </div>
-            <div className="item">
-              <img
-                src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/lifestyle.745b575.svg"
-                alt=""
-              />
-              <div className="line"></div>
-              <span>Lifestyle</span>
-            </div>
+            
+            
+            
             <div className="item">
               <img
                 src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/data.718910f.svg"
                 alt=""
               />
               <div className="line"></div>
-              <span>Data</span>
+              <span>الدورات</span>
             </div>
             <div className="item">
               <img
@@ -142,7 +103,7 @@ function Home() {
                 alt=""
               />
               <div className="line"></div>
-              <span>Photography</span>
+              <span>الاخبار</span>
             </div>
           </div>
         </div>
