@@ -6,7 +6,21 @@ import Slide from "../../components/slide/Slide";
 import CatCard from "../../components/catCard/CatCard";
 import ProjectCard from "../../components/projectCard/ProjectCard";
 import { cards, projects } from "../../data";
+import ReactPlayer from "react-player";
+import { Carousel } from "react-bootstrap";
+import VideoCarousel from "../../components/videoCarousel/VideoCarousel";
 
+
+const video = [
+  {
+    id: 1,
+    src: "./img/1.mp4"
+  },
+  {
+    id: 2,
+    src: "./img/2.mp4"
+  }
+]
 function Home() {
   return (
     <div className="home">
@@ -24,17 +38,17 @@ function Home() {
             <div className="title">
               <img src="./img/check.png" alt="" />
               <p className="item"> زيادة الدخل</p>
-             
+
             </div>
             <p>
-            يمكنك أن تكون عاملاً حراً بشكل أساسي او بجوارك عملك التقليدي ، مع إمكانية حصولك علي العملة الصعبة مما يسمح لك بزيادة دخلك بدرجة كبيرة.
+              يمكنك أن تكون عاملاً حراً بشكل أساسي او بجوارك عملك التقليدي ، مع إمكانية حصولك علي العملة الصعبة مما يسمح لك بزيادة دخلك بدرجة كبيرة.
 
             </p>
             <div className="title">
               <img src="./img/check.png" alt="" />
               تحقيق الاستقلالية            </div>
             <p>
-            يمكن أن يساعد التعلم المستقل الأفراد على تطوير المهارات والمعرفة اللازمة لبناء عمل مستقل ناجح وتحقيق الاستقلال المالي.
+              يمكن أن يساعد التعلم المستقل الأفراد على تطوير المهارات والمعرفة اللازمة لبناء عمل مستقل ناجح وتحقيق الاستقلال المالي.
 
             </p>
             <div className="title">
@@ -42,18 +56,18 @@ function Home() {
               المرونة
             </div>
             <p>
-            يتيح العمل الحر للمستقل بتحديد جدول زمني مرن وحرية العمل من أي مكان. يمكنك تحديد المواعيد النهائية وساعات العمل الخاصة بك ، طالما أنك تلبي احتياجات عميلك. 
+              يتيح العمل الحر للمستقل بتحديد جدول زمني مرن وحرية العمل من أي مكان. يمكنك تحديد المواعيد النهائية وساعات العمل الخاصة بك ، طالما أنك تلبي احتياجات عميلك.
             </p>
             <div className="title">
               <img src="./img/check.png" alt="" />
               اكتساب مهارات جديدة
             </div>
             <p>
-            غالبًا ما يتطلب العمل المستقل مجموعة فريدة من المهارات ، يمكن أن يساعد التعلم المستقل الأفراد على اكتساب هذه المهارات وتطوير خبراتهم في المجال الذي يختارونه.
+              غالبًا ما يتطلب العمل المستقل مجموعة فريدة من المهارات ، يمكن أن يساعد التعلم المستقل الأفراد على اكتساب هذه المهارات وتطوير خبراتهم في المجال الذي يختارونه.
             </p>
           </div>
           <div className="item">
-            <video src="./img/video.mp4" controls />
+            <video src="./img/1.mp4" controls></video>
           </div>
         </div>
       </div>
@@ -61,14 +75,17 @@ function Home() {
         <div className="container">
           <h1>Explore the marketplace</h1>
           <div className="items">
-           
-            <div className="item">
+
+          <div className="item">
+              <a href="https://heyzine.com/flip-book/deeee1bc2b.html" target="_blank">
               <img
                 src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/writing-translation.32ebe2e.svg"
                 alt=""
               />
+              </a>
               <div className="line"></div>
-              <span>الكتاب الالكتروني</span>
+              <a href="https://heyzine.com/flip-book/deeee1bc2b.html" target="_blank"> <span>الدليل الالكتروني</span></a>
+             
             </div>
             <div className="item">
               <img
@@ -86,9 +103,9 @@ function Home() {
               <div className="line"></div>
               <span>المدونات الصوتية</span>
             </div>
-            
-            
-            
+
+
+
             <div className="item">
               <img
                 src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/data.718910f.svg"

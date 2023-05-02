@@ -17,20 +17,15 @@ export const cards = [
     desc: "News",
     img: "https://images.pexels.com/photos/3095619/pexels-photo-3095619.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
   },
+  
   {
     id: 4,
-    title: "كتاب الكتروني",
-    desc: "E-book",
-    img: "https://images.pexels.com/photos/11660268/pexels-photo-11660268.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-  },
-  {
-    id: 5,
     title: "المدونات الصوتية",
     desc: "Podcasts",
     img: "https://images.pexels.com/photos/682082/pexels-photo-682082.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
   },
   {
-    id: 6,
+    id: 5,
     title: "مقابلات",
     desc: "Interviews",
     img: "https://images.pexels.com/photos/6883805/pexels-photo-6883805.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
