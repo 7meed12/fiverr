@@ -1,30 +1,30 @@
 .slide {
-  display: flex;
-  justify-content: center;
-  padding: 100px 0px;
+  display: flex !important;
+  justify-content: center !important;
+  padding: 100px 0px !important;
   
   .container {
-    width: 1400px;
-    position: relative;
+    width: 1400px !important;
+    position: relative !important;
   }
 
   .carousel-initialized {
-    position: static;
+    position: static !important;
   }
 
   .carousel-prev,
   .carousel-next {
-    width: 50px;
-    height: 50px;
-    background-color: rgb(243, 243, 243);
-    border-radius: 50%;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    margin: auto;
+    width: 50px !important;
+    height: 50px !important;
+    background-color: rgb(243, 243, 243) !important;
+    border-radius: 50% !important;
+    position: absolute !important;
+    top: 0 !important;
+    bottom: 0 !important;
+    margin: auto !important;
   }
 
   .carousel-prev {
-    left: -25px;
+    left: -25px !important;
   }
 }

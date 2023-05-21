@@ -11,7 +11,7 @@ function Featured() {
   };
   return (
     <div className="featured">
-      <div className="container">
+      <div className="container sm-12">
         <img src="./img/logo.png" alt="" />
         <div className="left">
           <h1>
